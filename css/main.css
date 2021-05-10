@@ -30,16 +30,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?i226ha');
-  src:  url('fonts/icomoon.eot?i226ha#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?i226ha') format('truetype'),
-    url('fonts/icomoon.woff?i226ha') format('woff'),
-    url('fonts/icomoon.svg?i226ha#icomoon') format('svg');
+  font-family: Unica One;
+  src: url(/path/to/fonts/examplefont.woff) format('woff'),
+       url(/path/to/fonts/examplefont.eot) format('eot');
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
 }
+
 
 body {
 	line-height: 1;
@@ -125,7 +123,7 @@ div {
 	width:60px;
 	height:60px;
 	bottom:30px;
-	left:10px;
+	right:25px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
