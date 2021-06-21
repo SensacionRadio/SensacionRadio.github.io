@@ -19,7 +19,7 @@
   		<link rel="preload" href="css/font-awesome.min.css" as="style">
   		<link rel="preload" href="js/jquery-3.2.1.min.js" as="script">
   		<link rel="preload" href="js/lunaplayer-full.js" as="script">
-  		<link rel="preload" href="images/sensacionradion.png" as="image">
+  		<link rel="preload" href="images/sensacionradion.webp" as="image">
 
 		<!--Meta--->
 		<meta name="description" content="Sensación Radio - Más música, más radio a tu estilo. Una radio web destinada a llevarte la mejor Programación musical.">
@@ -120,7 +120,7 @@
 			fontratio: "0.4",
 			radioname: "Sensación Radio - Más Radio, Más Música",
 			scroll: "true",										//true, false
-			coverimage: "images/sensacionradio.gif",			//link o ruta de logo radio
+			coverimage: "images/sensacionradio.webp",			//link o ruta de logo radio
 			onlycoverimage: "false",							//true para mostrar solo logo radio (false para no hacerlo)
 			coverstyle: "circle",								//circle, square
 			usevisualizer: "",									//fake, real 
@@ -135,13 +135,13 @@
 			metadatatechnic: "stream-icy-meta",					//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
 			ownmetadataurl: "https://tools.zenoradio.com/api/stations/znnmxg43qzzuv/now_playing/",
 			streamurl: "http://stream.zeno.fm/uy6h1g43qzzuv",	//Link de streaming 
-			streamtype: "radiozeno",							//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+			streamtype: "icecast2",							//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
 			icecastmountpoint: "",
 			radionomyid: "",
 			radionomyapikey: "",
-			radiojarid: "znnmxg43qzzuv",
+			radiojarid: "",
 			radiocoid: "",
-			shoutcastpath: "/chillout.mp3?type=http&nocache=377274",
+			shoutcastpath: "",
 			shoutcastid: "1",
 			streamsuffix: "",
 			metadatainterval: "20000",
@@ -155,7 +155,7 @@
 			});
 		});
 		</script>
-		
+		<!-- http://stream.zeno.fm/uy6h1g43qzzuv -->
 		<!-- Publicidad Superior -->
 		<div class="slideshow-container">
 
@@ -171,18 +171,22 @@
 
 			<div class="mySlides fade">
 				<div class="numbertext"></div>
-				<a href="https://api.whatsapp.com/send?phone=584269860879&text=%C2%A1Hola!%20Quiero%20solicitar%20un%20presupuesto.%20Estoy%20escuchando%20%20por%20www.sensacionradiofm.com" target="_blank" class="image featured"><img src="images/banner-tecnosoluciones.webp" style="width:100%">
+				<a href="https://api.whatsapp.com/send?phone=584128750746&text=%C2%A1Hola!%20Quiero%20solicitar%20un%20presupuesto.%20Estoy%20escuchando%20%20por%20www.sensacionradiofm.com" target="_blank" class="image featured"><img src="images/banner-tecnosoluciones.webp" style="width:100%">
 			</div>
-
 			<div class="mySlides fade">
 				<div class="numbertext"></div>
-				<a href="https://api.whatsapp.com/send?phone=584269860879&text=%C2%A1Hola!%20Quiero%20solicitar%20un%20presupuesto.%20Estoy%20escuchando%20%20por%20www.sensacionradiofm.com" class="image featured"><img src="images/banner-liceo.webp" style="width:100%">
+				<a href="https://api.whatsapp.com/send?phone=584269860879&text=%C2%A1Hola!%20Quiero%20solicitar%20un%20presupuesto.%20Estoy%20escuchando%20%20por%20www.sensacionradiofm.com" target="_blank" class="image featured"><img src="images/banner-liceo.webp" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext"></div>
+				<a href="hhttps://www.amazon.com/-/es/Dixon-Alhain-Bonett-Ramos/dp/B08PXB95K8/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" class="image featured"><img src="images/banner-epifania.webp" style="width:100%">
 			</div>
 
 		</div>
 		
 		<!-- NO BORRAR!!! No se que hace, pero ¡¡¡ES IMPORTANTE!!! -->
 		<div style="text-align:center">
+			<span class="dot"></span>
 			<span class="dot"></span>
 			<span class="dot"></span>
 			<span class="dot"></span>
@@ -194,11 +198,10 @@
 			<a href="#" class="image featured"><img src="images/programacion-marzo.webp" style="max-width: 80%;"></a>
 		</div>
 
-		<!-- Publicidad Inferior 
+		<!-- Publicidad Inferior -->
 		<div class="slideshow-container">
 			<a href="https://api.whatsapp.com/send?phone=584269860879&text=%C2%A1Hola!%20Quiero%20solicitar%20un%20presupuesto.%20Estoy%20escuchando%20%20por%20www.sensacionradiofm.com" target="_blank" class="image featured"><img src="images/banner-radio.webp" style="width:100%"></a>
 		</div>
-		-->
 
 		<!-- Plugins -->
 		<!-- Social Bar -->
