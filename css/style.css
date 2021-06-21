@@ -1,266 +1,338 @@
-@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url('https://fonts.googleapis.com/css?family=Share:400i,700i');
-@import url('bootstrap.min.css');
+@import url("fontawesome-all.min.css");
 
-html, body {
-    height: 100%;
+/*
+	Bienvenido a Sensación Radio - Más y mejor música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+@font-face {
+  font-family: Share;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+
+body {
+	line-height: 1;
+
+}
+
+div {
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.imagen-container {
+    max-width: 1000px;
+    max-height: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.imagen:hover {
+	filter: opacity(.8);
+}
+
+/*Flecha para hacer la pagina hacia arriba*/
+	.ir-arriba{
+	  display:none;
+	  background-repeat:no-repeat;
+	  font-size: 30px;
+	  color: orange;
+	  cursor: pointer;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 10px;
+	  z-index: 2;
+	}
+
+/*Social Bar*/
+	.social-bar {
+		position: fixed;
+		right: 0;
+		top: 20%;
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		z-index: 100;
+	}
+
+	.icon {
+		color: white;
+		text-decoration: none;
+		padding: .7rem;
+		display: flex;
+		transition: all .5s;
+	}
+
+	.icon-facebook {
+		background: #2E406E;
+	}
+
+	.icon-twitter {
+		background: #339DC5;
+	}
+
+	.icon-youtube {
+		background: #E83028;
+	}
+
+	.icon-instagram {
+		background: #e3405e;
+	}
+
+	.icon:first-child {
+		border-radius: 1rem 0 0 0;
+	}
+
+	.icon:last-child {
+		border-radius: 0 0 0 1rem;
+	}
+
+	.icon:hover {
+		padding-right: 3rem;
+		border-radius: 1rem 0 0 1rem;
+		box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+	}
+
+	/* Whatsapp */
+	.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right: 20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+  z-index:100;
+	}
+	.float:hover {
+		text-decoration: none;
+		color: #25d366;
+	  background-color:#fff;
+	}
+
+	.my-float{
+		margin-top:16px;
+}
+
+	
+	/* Carrusel */
+	* {box-sizing: border-box;}
+	      body {font-family: Verdana, sans-serif;}
+	      .mySlides {display: none;}
+	      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        max-height: 300px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+
+/* Footer */
+
+	#footer {
+		font-family: Share;
+		color: #fff;
+		padding: 1em 0 1em 0 ;
+		color: #b0b0b0;
+		text-align: center;
+	}
+
+
+		#footer a {
+			color: inherit;
+			border-bottom-color: #b0b0b0;
+		}
+
+			#footer a:hover {
+				color: #4696e5;
+			}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    overflow-x: hidden;
+	-webkit-text-size-adjust: none;
 }
 
-.web-player {
-    height: 100%;
-    color: #fff;
-    padding: 5px;
-    position: relative;
-    z-index: 3;
-    margin-top: 25px;
+mark {
+	background-color: transparent;
+	color: inherit;
 }
 
-.cover-album {
-    max-width: 80%;
-    margin: auto;
-    background-size: cover;
-    border: 1px solid #383838;
-    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.4);
-    transition: background-image 1s;
-    margin-bottom: 15px;
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
 }
 
-#currentCoverArt {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 1s;
-}
-
-.logo {
-    display: none;
-}
-
-.info-current-song {
-    font-family: 'Share', sans-serif;
-    text-align: center;
-}
-
-.info-current-song h2 {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.info-current-song h3 {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.play-pause {
-    font-size: 65px;
-}
-
-.play-pause i {
-    cursor: pointer;
-}
-
-.volume-icon {
-    font-size: 28px;
-    margin-top: -5px;
-}
-
-.volume-slide {
-    line-height: 35px;
-}
-
-.volume-control {
-    display: none;
-}
-
-.vagalume a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.lyrics {
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 400;
-    outline: none;
-    transition: .3s;
-}
-
-.lyrics:active {
-    text-decoration: none;
-    color: #fff;
-}
-
-.lyrics:visited {
-    text-decoration: none;
-    color: #fff;
-}
-
-.modal-content {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff !important;
-    border-radius: 0;
-}
-
-.modal-content .btn {
-    border-radius: 0;
-}
-
-/* Chrome */
-input[type=range] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 100%;
-}
-
-input[type=range]:focus {
-    outline: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    cursor: pointer;
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    background: #fff;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -8px;
-}
-
-/* Firefox */
-input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 5px;
-    cursor: pointer;
-    animate: 0.2s;
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    background: #fff;
-}
-
-input[type=range]::-moz-range-thumb {
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    border: 0px solid #000000;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-}
-
-/* IE e Edge */
-input[type=range]::-ms-track {
-    width: 100%;
-    height: 5px;
-    cursor: pointer;
-    animate: 0.2s;
-    background: transparent;
-    border-color: transparent;
-    border-width: 10px 0;
-    top: -10px;
-    color: transparent;
-}
-
-input[type=range]::-ms-fill-lower {
-    background: #fff;
-    border: 0px solid #000101;
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-}
-
-input[type=range]::-ms-fill-upper {
-    background: #fff;
-    border: 0px solid #000101;
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-}
-
-input[type=range]::-ms-thumb {
-    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    border: 0px solid #000000;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
 }
 
 
-@media(max-width: 320px) {
-    .cover-album {
-        max-width: 100%;
-    }
+/* Basic */
+body {
+	background: #13001a;	/*  */
+
 }
 
-@media(min-width: 320px) {
-    .volume-control {
-        display: flex;
-    }
+/* Mobile (Portrait) */
 
-    .call-lyrics {
-        margin-top: 20px;
-    }
-}
+	@media screen and (max-width: 480px) {
 
-@media(min-width: 320px) {
-    body {
-        align-items: center;
-    }
+		/* BG */
 
-    .h1-logo {
-        text-align: center;
-    }
+			@-moz-keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
 
-    .logo {
-        display: block;
-        z-index: 2;
-    }
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
 
-    .logo img {
-        max-width: 200px;
-    }
+	}
 
-    .web-player {
-        height: auto;
-        margin-top: 0;
-    }
+		@-webkit-keyframes bg {
+			0% {
+				-moz-transform: translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+				-ms-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
 
-    .cover-album {
+			100% {
+				-moz-transform: translate3d(-412.5px,0,0);
+				-webkit-transform: translate3d(-412.5px,0,0);
+				-ms-transform: translate3d(-412.5px,0,0);
+				transform: translate3d(-412.5px,0,0);
+			}
+			}
 
-        margin: 10px auto;
-        min-width: 320px;
-        height: 320px;
-        width: 320px;
-    }
+		@-ms-keyframes bg {
+			0% {
+				-moz-transform: translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+				-ms-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
 
-    .logo img {
-        max-width: 300px;
-        margin: 65px 0;
-    }
+			100% {
+				-moz-transform: translate3d(-412.5px,0,0);
+				-webkit-transform: translate3d(-412.5px,0,0);
+				-ms-transform: translate3d(-412.5px,0,0);
+				transform: translate3d(-412.5px,0,0);
+			}
+		}
 
-    .info-current-song {
-        margin-top: 50px;
-        text-align: center;
-    }
+		@keyframes bg {
+			0% {
+				-moz-transform: translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+				-ms-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
 
-    .volume-control {
-        margin-top: 10%;
-        text-align: center;
-    }
-}
+			100% {
+				-moz-transform: translate3d(-412.5px,0,0);
+				-webkit-transform: translate3d(-412.5px,0,0);
+				-ms-transform: translate3d(-412.5px,0,0);
+				transform: translate3d(-412.5px,0,0);
+			}
+		}
+
+/*
+	gracias por visitar
+	Sensación Radio - Más y mejor música
+	www.sensacionradio.com.ve
+	Design by: Jesús Aponte	| @jesusfcoaponte
+*/
