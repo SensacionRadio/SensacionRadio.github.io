@@ -1,0 +1,147 @@
+﻿<!--
+	Bienvenido a Sensación Radio - Más Radio, Más Música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+-->
+<head>
+	<title>.::Player - Sabrosa 94.5 FM::.</title>
+	<link rel="shortcut icon" type="image/png" href="images/sensacionradio.webp">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta http-equiv="Cache-Control" content="max-age=31536000">
+	<link rel="preload" href="js/jquery-3.2.1.min.js" as="script">
+	<link rel="preload" href="js/lunaplayer-full.js" as="script">
+	<link rel="preload" href="images/bg-sabrosa.webp" as="image">
+	<link rel="preload" href="images/cover-sabrosa.webp" as="image">
+
+	<!--Meta--->
+	<meta name="description" content="Sensación Radio - Más música, más radio a tu estilo. Una radio web destinada a llevarte la mejor Programación musical.">
+	<meta property="og:title" content="Sensación Radio.">
+	<meta property="og:image" content="/images/sensacionradio.webp">
+	<meta property="og:site_name" content="Sensación Radio">
+	<meta property="og:description" content="Sensación Radio Más música a tu estilo. Una radio web destinada a llevarte la mejor Programación musical.">
+	<meta property="og:url" content="https://www.sensacionradiofm.com/">
+	<meta name="author" content="@jesusfcoaponte"/>
+	<meta name="copyright" content="@jesusfcoaponte" />
+	<meta name="keywords" content="radio, radiosensacion, sensacionradio, sensacionradiofm, sensacion, online, streaming, musica, venezuela, monagas, maturín, cumaná, cumana, maturin, online, oldies, recuerdos, sencacion, sesacion, sensacio, emisora, sabrosa, sabrosastereo, mixteactivafm, radiosol891, dinamik899, lagranfm935, cantaclaro, dinamica, informativa, divertida, integral, musical, latina, fm, caribe, america, musica, hostingned, soluciones creativas, en vivo, apple, blackberry, android, iphone, salsa, nuevo, retro, merengue, reguetton, varios, 24 horas, en vivo, activa, audio, player, instagram, facebook, youtube, tropical, @jesusfcoaponte, @sensacionradio.">
+
+	<!-- Google Analytics -->
+		<script>
+		/**
+		 * Creates a temporary global ga object and loads analy  tics.js.
+		 * Paramenters o, a, and m are all used internally.  They could have been declared using 'var',
+		 * instead they are declared as parameters to save 4 bytes ('var ').
+		 *
+		 * @param {Window}      i The global context object.
+		 * @param {Document}    s The DOM document object.
+		 * @param {string}      o Must be 'script'.
+		 * @param {string}      g URL of the analytics.js script. Inherits protocol from page.
+		 * @param {string}      r Global name of analytics object.  Defaults to 'ga'.
+		 * @param {DOMElement?} a Async script tag.
+		 * @param {DOMElement?} m First script tag in document.
+		 */
+		(function(i, s, o, g, r, a, m){
+		  i['GoogleAnalyticsObject'] = r; // Acts as a pointer to support renaming.
+
+		  // Creates an initial ga() function.  The queued commands will be executed once analytics.js loads.
+		  i[r] = i[r] || function() {
+		    (i[r].q = i[r].q || []).push(arguments)
+		  },
+
+		  // Sets the time (as an integer) this tag was executed.  Used for timing hits.
+		  i[r].l = 1 * new Date();
+
+		  // Insert the script tag asynchronously.  Inserts above current tag to prevent blocking in
+		  // addition to using the async attribute.
+		  a = s.createElement(o),
+		  m = s.getElementsByTagName(o)[0];
+		  a.async = 1;
+		  a.src = g;
+		  m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'G-MCDG69Q4CQ', 'auto'); // Creates the tracker with default parameters.
+		ga('send', 'pageview');            // Sends a pageview hit.
+		</script>
+		<!-- End Google Analytics -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCDG69Q4CQ"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-MCDG69Q4CQ');
+		</script>
+	</head>
+
+<div id="lunaradio" style="width:100%; height: 100vh; background: url() bottom / cover no-repeat;">Cargando ...</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/lunaplayer-full.js"></script>
+	<!-- <div id="lunaradio" style="width:100%; height:600px;background: #000000 url(https://i.imgur.com/CTQdbqh.jpg) bottom / cover no-repeat;">Cargando ...</div> -->
+
+	<script>
+	jQuery(document).ready(function($) {
+		$("#lunaradio").lunaradio({
+			token: "600lIPN",
+			userinterface: "big",											//small, big
+			backgroundcolor: "",											//#13001A (Morado)
+			fontcolor: "#ffffff",											//#fa225b (Pink1); #ba0066 (Pink2)
+			hightlightcolor: "#EC7022",										//#ff8200 (Orange); #66008f (Purple); #ff0090 (Fucsia)
+			fontname: "Share",
+			googlefont: "Share",
+			fontratio: "0.4",
+			radioname: "Sabrosa 94.5 FM - La radio que lo tiene todo",
+			scroll: "true",													//true, false
+			coverimage: "images/cover-sabrosa.webp",							//link o ruta de logo radio
+			onlycoverimage: "true",											//true para mostrar solo logo radio (false para no)
+			coverstyle: "square",											//circle, square
+			usevisualizer: "",												//fake, real 
+			visualizertype: "5",
+			multicolorvisualizer: "true",
+			color1: "#e66c35",
+			color2: "#d04345",
+			color3: "#85a752",
+			color4: "#067dcc",
+			visualizeropacity: "0.4",
+			itunestoken: "1000lIPN",
+			metadatatechnic: "",								//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
+			ownmetadataurl: "",
+			streamurl: "http://stream.zeno.fm/bav4zptsqv8uv",				//Link de streaming 
+			streamtype: "radiojar",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+			icecastmountpoint: "",
+			radionomyid: "",
+			radionomyapikey: "",
+			radiojarid: "bav4zptsqv8uv",
+			radiocoid: "",
+			shoutcastpath: "",
+			shoutcastid: "1",
+			streamsuffix: "",
+			metadatainterval: "20000",
+			volume: "100",
+			debug: "false",
+			autoplay: "true",
+			displayliveicon: "true",
+			displayvisualizericon: "true",
+			usestreamcorsproxy: "false", 
+			corsproxy: "",
+		});
+	});
+	</script>
+	<script language="JavaScript" type="text/javascript">
+	function click(){
+	if(event.button==2){
+	alert('Sabrosa 94.5 FM - La radio que lo tiene todo');
+	}
+	}
+	document.onmousedown=click
+	//-->
+	</script>
+<!--
+	Gracias por visitar
+	Sensación Radio - Más Radio, Más Música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+-->
