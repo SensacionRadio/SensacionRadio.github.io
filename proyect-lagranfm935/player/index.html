@@ -1,0 +1,65 @@
+<!--
+    Bienvenido a Sensación Radio - Más Radio, Más Música
+    www.sensacionradiofm.com
+    Design by: Jesús Aponte | @jesusfcoaponte
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>.::La Gran FM 93.5::.</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="images/sensacionradio.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+     <body style="min-width: 100%;min-height: 100%; position: fixed; background: transparent; background-position: center; background-size: cover; transition: background-image 1s; background-position: center; background-attachment: fixed">
+        <main>
+            <section id="player">
+                <div class="container">
+                    <div class="row web-player">
+                        <div class="col-12 col-lg-10">
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <div class="cover-album" style="background: url('./img/cover.jpg') no-repeat;">
+                                    </div>
+                                </div>
+                                <div class="col-12 ml-md-auto col-md-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="info-current-song">
+                                                <h2>La Gran FM 93.5</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="play-pause col-12 col-md-2 text-center">
+                                                    <i id="playerButton" class="fa fa-play" onclick="togglePlay()"></i>
+                                                </div>
+                                                <div class="col-12 col-md-10 text-center">
+                                                    <div class="row volume-control">
+                                                        <div class="volume-icon col-1"><i class="fa fa-volume-up"></i></div>
+                                                        <div class="volume-slide col-10 text-center"><input type="range" id="volume"
+                                                                step="1" min="0" max="100" value="80"></div>
+                                                        <div class="percentual-volume col-12">Volumen<span id="volIndicator">100</span>%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script const URL_STREAMING = "http://stream.zeno.fm/xnstr386za0uv"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
