@@ -1,0 +1,74 @@
+﻿<!--
+	Bienvenido a Sensación Radio - Más Radio, Más Música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+-->
+	<head>
+	<title>.::Player - Circuito Dance FM::.</title>
+	<link rel="shortcut icon" type="image/png" href="">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<link rel="stylesheet" href="../css/fonts-styles.css"/>
+	<link rel="preload" href="../js/jquery-3.2.1.min.js" as="script">
+	<link rel="preload" href="../js/lunaplayer-full.js" as="script">
+	</head>
+
+	<div id="lunaradio" style="width:100%; height:100vh; background: url(../images/background-vanguardiamix.webp) bottom / cover no-repeat;">Cargando...</div>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/lunaplayer-full.js"></script>
+	<!-- <div id="lunaradio" style="width:100%; height:600px;background: #000000 url(https://i.imgur.com/CTQdbqh.jpg) bottom / cover no-repeat;">Cargando ...</div> -->
+
+	<script>
+	jQuery(document).ready(function($) {
+		$("#lunaradio").lunaradio({
+			token: "600lIPN",
+			userinterface: "big",											//small, big
+			backgroundcolor: "ff0000",										//#13001A (Morado)
+			fontcolor: "#ffffff",											//#fa225b (Pink1); #ba0066 (Pink2)
+			hightlightcolor: "#ba0066",										//#ff8200 (Orange); #66008f (Purple); #ff0090 (Fucsia)
+			fontname: "",
+			googlefont: "rimouski sb",
+			fontratio: "0.4",
+			radioname: "Circuito Dance FM",
+			scroll: "false",												//true, false
+			coverimage: "../images/logo-dancefm.webp",				//link o ruta de logo radio
+			onlycoverimage: "true",											//true para mostrar solo logo radio (false para no)
+			coverstyle: "circle",											//circle, square
+			usevisualizer: "fake",											//fake, real 
+			visualizertype: "6",
+			multicolorvisualizer: "true",
+			color1: "#e66c35",
+			color2: "#d04345",
+			color3: "#85a752",
+			color4: "#067dcc",
+			visualizeropacity: "0.4",
+			itunestoken: "1000lIPN",
+			metadatatechnic: "",								//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
+			ownmetadataurl: "",
+			streamurl: "http://stream.zeno.fm/cygwwun7a5zuv",				//Link de streaming 
+			streamtype: "",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+			icecastmountpoint: "",
+			radionomyid: "",
+			radionomyapikey: "",
+			radiojarid: "",
+			radiocoid: "",
+			shoutcastpath: "",
+			shoutcastid: "1",
+			streamsuffix: "",
+			metadatainterval: "5000",
+			volume: "100",
+			debug: "false",
+			autoplay: "true",
+			displayliveicon: "true",
+			displayvisualizericon: "true",
+			usestreamcorsproxy: "false", 
+			corsproxy: "",
+		});
+	});
+	</script>
+<!--
+	Gracias por visitar
+	Sensación Radio - Más Radio, Más Música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+-->
