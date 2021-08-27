@@ -3,7 +3,7 @@
 	www.sensacionradiofm.com
 	Design by: Jesús Aponte	| @jesusfcoaponte
 -->
-	<head>
+<head>
 	<title>.::Player - Suena 101.7 FM::.</title>
 	<link rel="shortcut icon" type="image/png" href="">
 	<meta charset="utf-8"/>
@@ -11,9 +11,9 @@
 	<link rel="stylesheet" href="../css/fonts-styles.css"/>
 	<link rel="preload" href="js-suenamaturin/jquery-3.2.1.min.js" as="script">
 	<link rel="preload" href="js-suenamaturin/lunaplayer-full.js" as="script">
-	</head>
+</head>
 
-	<div id="lunaradio" style="width:100%; height:100vh; background: url(../images/background-radios.webp) bottom / cover no-repeat;">Cargando...</div>
+<div id="lunaradio" style="width:100%; height:100vh; background: url(../images/background-radios.webp) bottom / cover no-repeat;">Cargando...</div>
 	<script src="js-suenamaturin/jquery-3.2.1.min.js"></script>
 	<script src="js-suenamaturin/lunaplayer-full.js"></script>
 	<!-- <div id="lunaradio" style="width:100%; height:600px;background: #000000 url(https://i.imgur.com/CTQdbqh.jpg) bottom / cover no-repeat;">Cargando ...</div> -->
@@ -45,9 +45,9 @@
 			itunestoken: "1000lIPN",
 			metadatatechnic: "corsproxy",								//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
 			ownmetadataurl: "",
-			corsproxy: "https://cors-anywhere.herokuapp.com/", 
+			corsproxy: "https://cors-anywhere.herokuapp.com/",
 			streamurl: "http://stream.zeno.fm/7ccqe2n6b48uv.acc",				//Link de streaming 
-			streamtype: "",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+			streamtype: "radiojar",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
 			icecastmountpoint: "",
 			radionomyid: "",
 			radionomyapikey: "",
@@ -67,7 +67,6 @@
 		});
 	});
 	</script>
-	
 	<script language="JavaScript" type="text/javascript">
 	function click(){
 	if(event.button==2){
