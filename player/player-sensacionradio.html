@@ -25,19 +25,19 @@
 	jQuery(document).ready(function($) {
 		$("#lunaradio").lunaradio({
 			token: "600lIPN",
-			userinterface: "big",											//small, big
-			backgroundcolor: "",											//#13001A (Morado)
-			fontcolor: "#ffffff",											//#fa225b (Pink1); #ba0066 (Pink2)
-			hightlightcolor: "#fa225b",										//#ff8200 (Orange); #66008f (Purple); #ff0090 (Fucsia)
+			userinterface: "big",
+			backgroundcolor: "",
+			fontcolor: "#ffffff",
+			hightlightcolor: "#fa225b",
 			fontname: "",
 			googlefont: "rimouski sb",
 			fontratio: "0.4",
 			radioname: "Sensación Radio - Más Música, Más Radio",
-			scroll: "true",												//true, false
-			coverimage: "../images/logo-sensacionradio.webp",				//link o ruta de logo radio
-			onlycoverimage: "true",											//true para mostrar solo logo radio (false para no)
-			coverstyle: "circle",											//circle, square
-			usevisualizer: "fake",											//fake, real 
+			scroll: "true",
+			coverimage: "../images/logo-sensacionradio.webp",
+			onlycoverimage: "true",
+			coverstyle: "circle",
+			usevisualizer: "fake",
 			visualizertype: "6",
 			multicolorvisualizer: "true",
 			color1: "#e66c35",
@@ -46,17 +46,18 @@
 			color4: "#067dcc",
 			visualizeropacity: "0.4",
 			itunestoken: "1000lIPN",
-			metadatatechnic: "corsproxy",								//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
-			ownmetadataurl: "",
+			metadatatechnic: "",
+			ownmetadataurl: "https://services.getmeradio.com/getmeradio/song_processing/4256/nowplaying.txt",
 			corsproxy: "https://cors-anywhere.herokuapp.com/",
-			streamurl: "http://stream.zeno.fm/uy6h1g43qzzuv.acc",				//Link de streaming 
-			streamtype: "radiojar",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
-			icecastmountpoint: "",
+			streamurl: "http://stream.zeno.fm/uy6h1g43qzzuv",
+			streamtype: "radiozeno",
+			icecastmountpoint: "/live",
 			radionomyid: "",
 			radionomyapikey: "",
 			radiojarid: "",
 			radiocoid: "",
-			shoutcastpath: "",
+			radiozenoid: "uy6h1g43qzzuv",
+			shoutcastpath: "/stream",
 			shoutcastid: "1",
 			streamsuffix: "",
 			metadatainterval: "5000",
@@ -66,7 +67,6 @@
 			displayliveicon: "true",
 			displayvisualizericon: "true",
 			usestreamcorsproxy: "true", 
-			corsproxy: "",
 		});
 	});
 	</script>
