@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 	Bienvenido a Sensación Radio - Más Radio, Más Música
 	www.sensacionradiofm.com
 	Design by: Jesús Aponte	| @jesusfcoaponte
@@ -26,7 +26,7 @@
 		$("#lunaradio").lunaradio({
 			token: "600lIPN",
 			userinterface: "big",
-			backgroundcolor: "",
+			backgroundcolor: "transparent",
 			fontcolor: "#ffffff",
 			hightlightcolor: "#fa225b",
 			fontname: "",
@@ -37,7 +37,7 @@
 			coverimage: "../images/logo-sensacionradio.webp",
 			onlycoverimage: "true",
 			coverstyle: "circle",
-			usevisualizer: "fake",
+			usevisualizer: "true",
 			visualizertype: "6",
 			multicolorvisualizer: "true",
 			color1: "#e66c35",
@@ -48,16 +48,17 @@
 			itunestoken: "1000lIPN",
 			metadatatechnic: "",
 			ownmetadataurl: "https://services.getmeradio.com/getmeradio/song_processing/4256/nowplaying.txt",
+			usestreamcorsproxy: "false",
 			corsproxy: "https://cors-anywhere.herokuapp.com/",
 			streamurl: "http://stream.zeno.fm/uy6h1g43qzzuv",
 			streamtype: "radiozeno",
-			icecastmountpoint: "",
+			icecastmountpoint: "/live",
+			shoutcastpath: "/stream",
 			radionomyid: "",
 			radionomyapikey: "",
+			radiozenoid: "uy6h1g43qzzuv",
 			radiojarid: "",
 			radiocoid: "",
-			radiozenoid: "uy6h1g43qzzuv",
-			shoutcastpath: "",
 			shoutcastid: "1",
 			streamsuffix: "",
 			metadatainterval: "5000",
@@ -66,7 +67,6 @@
 			autoplay: "true",
 			displayliveicon: "true",
 			displayvisualizericon: "true",
-			usestreamcorsproxy: "true", 
 		});
 	});
 	</script>
