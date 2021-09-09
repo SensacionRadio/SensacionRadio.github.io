@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 	Bienvenido a Sensación Radio - Más Radio, Más Música
 	www.sensacionradiofm.com
 	Design by: Jesús Aponte	| @jesusfcoaponte
@@ -18,23 +18,23 @@
 	<script src="js-mixteactivafm/lunaplayer-full.js"></script>
 	<!-- <div id="lunaradio" style="width:100%; height:600px;background: #000000 url(https://i.imgur.com/CTQdbqh.jpg) bottom / cover no-repeat;">Cargando ...</div> -->
 
-	<script>
+<script>
 	jQuery(document).ready(function($) {
 		$("#lunaradio").lunaradio({
 			token: "600lIPN",
-			userinterface: "big",											//small, big
-			backgroundcolor: "",											//#13001A (Morado)
-			fontcolor: "#ffffff",											//#fa225b (Pink1); #ba0066 (Pink2)
-			hightlightcolor: "#ff0000",										//#ff8200 (Orange); #66008f (Purple); #ff0090 (Fucsia)
+			userinterface: "big",
+			backgroundcolor: "transparent",
+			fontcolor: "#ffffff",
+			hightlightcolor: "#ff0000",
 			fontname: "",
 			googlefont: "rimouski sb",
 			fontratio: "0.4",
 			radioname: "Mix 94.1 FM - Te Activa",
-			scroll: "true",												//true, false
-			coverimage: "../images/logo-mixteactivafm.webp",				//link o ruta de logo radio
-			onlycoverimage: "true",											//true para mostrar solo logo radio (false para no)
-			coverstyle: "circle",											//circle, square
-			usevisualizer: "fake",											//fake, real 
+			scroll: "true",
+			coverimage: "../images/logo-mixteactivafm.webp",
+			onlycoverimage: "true",
+			coverstyle: "circle",
+			usevisualizer: "true",
 			visualizertype: "6",
 			multicolorvisualizer: "true",
 			color1: "#e66c35",
@@ -43,16 +43,19 @@
 			color4: "#067dcc",
 			visualizeropacity: "0.4",
 			itunestoken: "1000lIPN",
-			metadatatechnic: "corsproxy",								//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
-			ownmetadataurl: "",
-			streamurl: "http://stream.zeno.fm/sxcuzr96za0uv.acc",				//Link de streaming 
-			streamtype: "radiojar",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
-			icecastmountpoint: "",
+			metadatatechnic: "",
+			ownmetadataurl: "https://services.getmeradio.com/getmeradio/song_processing/4262/nowplaying.txt",
+			usestreamcorsproxy: "false",
+			corsproxy: "https://cors-anywhere.herokuapp.com/",
+			streamurl: "http://stream.zeno.fm/sxcuzr96za0uv",
+			streamtype: "radiozeno",
+			icecastmountpoint: "/live",
+			shoutcastpath: "/stream",
 			radionomyid: "",
 			radionomyapikey: "",
+			radiozenoid: "sxcuzr96za0uv",
 			radiojarid: "",
 			radiocoid: "",
-			shoutcastpath: "",
 			shoutcastid: "1",
 			streamsuffix: "",
 			metadatainterval: "5000",
@@ -61,8 +64,6 @@
 			autoplay: "true",
 			displayliveicon: "true",
 			displayvisualizericon: "true",
-			usestreamcorsproxy: "true", 
-			corsproxy: "",
 		});
 	});
 	</script>
