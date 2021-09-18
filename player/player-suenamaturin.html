@@ -22,19 +22,19 @@
 	jQuery(document).ready(function($) {
 		$("#lunaradio").lunaradio({
 			token: "600lIPN",
-			userinterface: "big",											//small, big
-			backgroundcolor: "",											//#13001A (Morado)
-			fontcolor: "#ffffff",											//#fa225b (Pink1); #ba0066 (Pink2)
-			hightlightcolor: "#F6F163",										//#ff8200 (Orange); #66008f (Purple); #ff0090 (Fucsia)
+			userinterface: "big",
+			backgroundcolor: "transparent",
+			fontcolor: "#ffffff",
+			hightlightcolor: "#F6F163",
 			fontname: "",
 			googlefont: "rimouski sb",
 			fontratio: "0.4",
 			radioname: "Suena 101.7 FM +Radio +Música",
-			scroll: "true",												//true, false
-			coverimage: "../images/logo-suenamaturin.webp",				//link o ruta de logo radio
-			onlycoverimage: "true",											//true para mostrar solo logo radio (false para no)
-			coverstyle: "circle",											//circle, square
-			usevisualizer: "fake",											//fake, real 
+			scroll: "true",
+			coverimage: "../images/logo-suenamaturin.webp",
+			onlycoverimage: "true",
+			coverstyle: "circle",
+			usevisualizer: "fake",
 			visualizertype: "6",
 			multicolorvisualizer: "true",
 			color1: "#e66c35",
@@ -43,17 +43,19 @@
 			color4: "#067dcc",
 			visualizeropacity: "0.4",
 			itunestoken: "1000lIPN",
-			metadatatechnic: "corsproxy",								//fallback, corsproxy, directly, stream-icy-meta, ownmetadataurl 
-			ownmetadataurl: "",
+			metadatatechnic: "",
+			ownmetadataurl: "https://zenoplay.zenomedia.com/api/zenofm/nowplaying/7ccqe2n6b48uv",
+			usestreamcorsproxy: "false",
 			corsproxy: "https://cors-anywhere.herokuapp.com/",
-			streamurl: "http://stream.zeno.fm/7ccqe2n6b48uv.acc",				//Link de streaming 
-			streamtype: "radiojar",								//shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
-			icecastmountpoint: "",
+			streamurl: "http://stream.zeno.fm/7ccqe2n6b48uv",
+			streamtype: "radiozeno",
+			icecastmountpoint: "/live",
+			shoutcastpath: "/stream",
 			radionomyid: "",
 			radionomyapikey: "",
+			radiozenoid: "7ccqe2n6b48uv",
 			radiojarid: "",
 			radiocoid: "",
-			shoutcastpath: "",
 			shoutcastid: "1",
 			streamsuffix: "",
 			metadatainterval: "5000",
@@ -62,11 +64,10 @@
 			autoplay: "true",
 			displayliveicon: "true",
 			displayvisualizericon: "true",
-			usestreamcorsproxy: "true", 
-			corsproxy: "",
 		});
 	});
 	</script>
+	
 	<script language="JavaScript" type="text/javascript">
 	function click(){
 	if(event.button==2){
