@@ -127,6 +127,13 @@ h6 {
 	}
 	/* end of details lightboxes */
 
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        max-height: 300px;
+        position: relative;
+        margin: auto;
+      }
 
 
 /* Min-width width 992px */
