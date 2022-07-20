@@ -1,0 +1,84 @@
+﻿<!--
+	Bienvenido a Sensación Radio - Más Radio, Más Música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+-->
+<head>
+	<title>.::Player - Más Network 107.3 FM Mucuchies::.</title>
+	<link rel="shortcut icon" type="image/png" href="">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<link rel="stylesheet" href="../css/fonts-styles.css"/>
+	<link rel="preload" href="js-masnetworkmaturin/jquery-3.2.1.min.js" as="script">
+	<link rel="preload" href="js-masnetworkmaturin/lunaplayer-full.js" as="script">
+</head>
+
+<div id="lunaradio" style="width:100%; height:100vh; background: url(../images/background-masnetworkmaturin.webp) bottom / cover no-repeat; background-position: center;">Cargando...</div>
+	<script src="js-masnetworkmaturin/jquery-3.2.1.min.js"></script>
+	<script src="js-masnetworkmaturin/lunaplayer-full.js"></script>
+	<!-- <div id="lunaradio" style="width:100%; height:600px;background: #000000 url(https://i.imgur.com/CTQdbqh.jpg) bottom / cover no-repeat;">Cargando ...</div> -->
+
+<script>
+	jQuery(document).ready(function($) {
+		$("#lunaradio").lunaradio({
+			token: "600lIPN",
+			userinterface: "big",
+			backgroundcolor: "transparent",
+			fontcolor: "#ffffff",
+			hightlightcolor: "#0101DB",
+			fontname: "rimouski sb",
+			googlefont: "rimouski sb",
+			fontratio: "0.4",
+			radioname: "Más Network 107.3 FM Mucuchies ¡Medio Palo!",
+			scroll: "true",
+			coverimage: "../images/cover-masnetworkmucuchies.webp",
+			onlycoverimage: "true",
+			coverstyle: "circle",
+			usevisualizer: "fake",
+			visualizertype: "6",
+			multicolorvisualizer: "true",
+			color1: "#e66c35",
+			color2: "#d04345",
+			color3: "#85a752",
+			color4: "#067dcc",
+			visualizeropacity: "0.4",
+			itunestoken: "1000lIPN",
+			metadatatechnic: "",
+			ownmetadataurl: "https://zenoplay.zenomedia.com/api/zenofm/nowplaying/7auksvcwts8uv",
+			usestreamcorsproxy: "false",
+			corsproxy: "https://cors-anywhere.herokuapp.com/",
+			streamurl: "https://stream.zeno.fm/7auksvcwts8uv",
+			streamtype: "radiozeno",
+			icecastmountpoint: "/live",
+			shoutcastpath: "/stream",
+			radionomyid: "",
+			radionomyapikey: "",
+			radiozenoid: "sxcuzr96za0uv",
+			radiojarid: "",
+			radiocoid: "",
+			shoutcastid: "1",
+			streamsuffix: "",
+			metadatainterval: "5000",
+			volume: "100",
+			debug: "false",
+			autoplay: "true",
+			displayliveicon: "true",
+			displayvisualizericon: "true",
+		});
+	});
+	</script>
+	<script language="JavaScript" type="text/javascript">
+	function click(){
+	if(event.button==2){
+	alert('Más Network 107.3 FM Mucuchies ¡Medio Palo!');
+	}
+	}
+	document.onmousedown=click
+	//-->
+	</script>
+<!--
+	Gracias por visitar
+	Sensación Radio - Más Radio, Más Música
+	www.sensacionradiofm.com
+	Design by: Jesús Aponte	| @jesusfcoaponte
+-->
