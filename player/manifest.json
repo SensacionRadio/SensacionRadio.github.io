@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "description": "Sensación Radio",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "sensacionradiofm",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "sensacionradiofm",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "music"
+  ],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": [
+    {
+      "name": "Sensación Radio",
+      "url": "",
+      "description": "Sensación Radio"
+    }
+  ],
+  "prefer_related_applications": true
+}
